@@ -1,0 +1,31 @@
+<form action="">
+
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="chiffre">
+    <label class="custom-control-label" for="chiffre">Sans Chiffre</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="majuscule">
+    <label class="custom-control-label" for="majuscule">Sans Majuscule</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="minuscule">
+    <label class="custom-control-label" for="minuscule">Sans Minuscule</label>
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="special">
+    <label class="custom-control-label" for="special">Sans Caractères Spéciaux</label>
+  </div>
+  <div>
+    <label for="customRange3">Niveau de sécurité</label>
+    <input type="range" class="custom-range" min="2" max="20" step="1" id="customRange3">
+  </div>
+  <button type="submit" class="btn btn-primary">Générer</button>
+
+</form>
+
+<br>
+<p id="generate"><%= @generer %></p>
+<p><%=Pwgen::Password.password %></p>
+
+

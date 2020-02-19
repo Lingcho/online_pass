@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OnlinePass</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+  <script>
+    // function generate_password () {
+    //   digit = $("#digit").is(':checked');
+    //   /* longueur = $("#longueur").val(); */
+
+    //     $.ajax({
+
+    //       url: "../controllers/accueils_controller.rb",
+    //       type: 'POST',
+    //       data: {
+    //         digit: digit
+    //       },
+    //     success: function(data) {
+    //       alert("coiucou");
+    //     }
+    //     error: function() {
+    //       alert("Jo");
+    //     }
+
+    //     });
+
+    // };
+
+
+let chiffre = document.querySelector("#chiffre")
+let majuscule = document.querySelector("#majuscule")
+let minuscule = document.querySelector("#minuscule")
+let special = document.querySelector("#special")
+
+test1 = false
+test2 = false
+
+
+
+  chiffre.checkboxpicker();
+chiffre.on('change', function() {
+  test1 = true;
+});
+
+
+  </script>
+</html>
