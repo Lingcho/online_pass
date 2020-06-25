@@ -105,7 +105,7 @@ GEM
       phonetic_encoder (~> 1.1.1)
       punctuation_name (~> 1.1.1)
       to_words (~> 1.1.1)
-    rack (2.0.7)
+    rack (2.2.3)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
